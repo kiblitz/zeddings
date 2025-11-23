@@ -36,6 +36,12 @@
     }
   },
   {
+    "context": "vim_mode == normal",
+    "bindings": {
+      ", h t": "editor::Hover"
+    }
+  },
+  {
     "context": "KeymapEditor",
     "bindings": {
       "escape": "editor::ToggleFocus"
@@ -240,7 +246,7 @@
       "'": ["vim::PushJump", { "line": true }],
       "`": ["vim::PushJump", { "line": false }],
       ";": "vim::RepeatFind",
-      ",": "vim::RepeatFindReversed",
+      // ",": "vim::RepeatFindReversed",
       "ctrl-o": "pane::GoBack",
       "ctrl-i": "pane::GoForward",
       "ctrl-]": "editor::GoToDefinition",
