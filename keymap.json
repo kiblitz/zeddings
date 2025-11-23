@@ -7,7 +7,7 @@
 // from the command palette.
 [
   {
-    "context": "vim_mode == normal || vim_mode == visual || vim_mode == operator",
+    "context": "KeymapEditor || vim_mode == normal || vim_mode == visual || vim_mode == operator",
     "bindings": {
       "space space": "command_palette::Toggle",
       "space f f": "file_finder::Toggle",
@@ -99,7 +99,7 @@
     "bindings": {
       "shift-backspace": "editor::Backspace",
       "backspace": "editor::Backspace",
-      "delete": "keymap_editor::DeleteBinding",
+      "delete": "editor::Delete",
       "shift-tab": "editor::Backtab",
       /*
       "ctrl-k": "editor::CutToEndOfLine",
