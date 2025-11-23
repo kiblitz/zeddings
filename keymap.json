@@ -7,7 +7,7 @@
 // from the command palette.
 [
   {
-    "context": "vim_mode != insert",
+    "context": "vim_mode == normal || vim_mode == visual || vim_mode == operator",
     "bindings": {
       "space space": "command_palette::Toggle",
       "space f f": "file_finder::Toggle",
@@ -26,8 +26,25 @@
       "space w . K": "workspace::MovePaneUp",
       "space w . J": "workspace::MovePaneDown",
 
+      "space w m": "vim::MaximizePane",
+      "space w =": "vim::ResetPaneSizes",
+
       "space tab": "tab_switcher::Toggle",
-      "space shift-tab": ["tab_switcher::Toggle", { "select_last": true }]
+      "space shift-tab": ["tab_switcher::Toggle", { "select_last": true }],
+
+      "space !": "terminal_panel::Toggle"
+    }
+  },
+  {
+    "context": "KeymapEditor",
+    "bindings": {
+      "escape": "editor::ToggleFocus"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "escape": "terminal_panel::ToggleFocus"
     }
   },
   {
