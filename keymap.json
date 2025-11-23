@@ -11,13 +11,21 @@
     "bindings": {
       "space space": "command_palette::Toggle",
       "space f f": "file_finder::Toggle",
+
       "space w d": "pane::CloseActiveItem",
       "space w -": "pane::SplitUp",
       "space w /": "pane::SplitLeft",
+
       "space w h": "workspace::ActivatePaneLeft",
       "space w l": "workspace::ActivatePaneRight",
       "space w k": "workspace::ActivatePaneUp",
       "space w j": "workspace::ActivatePaneDown",
+
+      "space w . H": "workspace::MovePaneLeft",
+      "space w . L": "workspace::MovePaneRight",
+      "space w . K": "workspace::MovePaneUp",
+      "space w . J": "workspace::MovePaneDown",
+
       "space tab": "tab_switcher::Toggle",
       "space shift-tab": ["tab_switcher::Toggle", { "select_last": true }]
     }
